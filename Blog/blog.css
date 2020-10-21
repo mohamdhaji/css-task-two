@@ -1,0 +1,18 @@
+.blogs {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.blog-dash {
+  width: 100%;
+  margin: auto;
+  background: black;
+  height: 2px;
+}
+
+@media (min-width: 40rem) {
+  .blogs {
+    width: 60%;
+  }
+}
