@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
 
+/* :not(span, h2, h1, p) {
+} */
 * {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -8,7 +10,6 @@
 body {
   margin: 0;
   font-family: Heebo;
-  /* overflow-x: hidden !important; */
 }
 #main {
   margin-top: 90px;
@@ -38,7 +39,8 @@ body {
   text-decoration: none;
 }
 
-.main-nav__item a {
+.main-nav__item a,
+.mobile-nav__item a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -91,6 +93,38 @@ body {
   margin: 0.6rem 0;
 }
 
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+  overflow-x: initial;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
+
 .main-footer {
   margin-top: 100px;
   text-align: center;
@@ -102,4 +136,17 @@ body {
 .main-nav__items {
   padding: 0;
   margin: 0;
+}
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.open {
+  display: block !important;
 }

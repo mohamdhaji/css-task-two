@@ -21,6 +21,7 @@ section > h1 {
 
 .item-description > h2 {
   color: #757575;
+  overflow-y: auto;
 }
 .item-description > h2 span {
   background: #455a64;
