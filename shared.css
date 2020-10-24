@@ -4,12 +4,16 @@
 } */
 * {
   box-sizing: border-box;
+}
+body,
+html {
   overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: Heebo;
+  /* overflow-x: hidden; */
 }
 #main {
   margin-top: 90px;
@@ -55,7 +59,6 @@ body {
 .main-nav__item {
   margin: 20px 15px;
   color: black;
-  overflow-x: initial;
 }
 
 @media (min-width: 40rem) {
@@ -118,7 +121,6 @@ body {
 
 .mobile-nav__item {
   margin: 1rem 0;
-  overflow-x: initial;
 }
 
 .mobile-nav__item a {
